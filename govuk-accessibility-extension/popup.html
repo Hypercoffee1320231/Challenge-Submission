@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOV.UK Accessibility Menu</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="accessibility-menu">
+    <h2>Accessibility Options</h2>
+    <div class="option-group">
+      <button id="toggle-contrast">Toggle High Contrast</button>
+      <button id="toggle-dyslexic-font">Toggle Dyslexic Font</button>
+      <button id="increase-font">Increase Font Size</button>
+      <button id="decrease-font">Decrease Font Size</button>
+    </div>
+    
+    <div class="language-section">
+      <h3>Language Options</h3>
+      <select id="language-selector">
+        <option value="">Select Language</option>
+        <!-- European Languages -->
+        <optgroup label="European Languages">
+          <option value="cy">Welsh (Cymraeg)</option>
+          <option value="pl">Polish (Polski)</option>
+          <option value="fr">French (Français)</option>
+          <option value="de">German (Deutsch)</option>
+          <option value="es">Spanish (Español)</option>
+          <option value="it">Italian (Italiano)</option>
+          <option value="pt">Portuguese (Português)</option>
+          <option value="ro">Romanian (Română)</option>
+          <option value="bg">Bulgarian (Български)</option>
+          <option value="el">Greek (Ελληνικά)</option>
+          <option value="hu">Hungarian (Magyar)</option>
+          <option value="cs">Czech (Čeština)</option>
+          <option value="sk">Slovak (Slovenčina)</option>
+          <option value="nl">Dutch (Nederlands)</option>
+        </optgroup>
+        
+        <!-- South Asian Languages -->
+        <optgroup label="South Asian Languages">
+          <option value="hi">Hindi (हिंदी)</option>
+          <option value="bn">Bengali (বাংলা)</option>
+          <option value="pa">Punjabi (ਪੰਜਾਬੀ)</option>
+          <option value="ta">Tamil (தமிழ்)</option>
+          <option value="te">Telugu (తెలుగు)</option>
+          <option value="mr">Marathi (मराठी)</option>
+          <option value="gu">Gujarati (ગુજરાતી)</option>
+          <option value="kn">Kannada (ಕನ್ನಡ)</option>
+          <option value="ml">Malayalam (മലയാളം)</option>
+          <option value="si">Sinhala (සිංහල)</option>
+        </optgroup>
+
+        <!-- East Asian Languages -->
+        <optgroup label="East Asian Languages">
+          <option value="zh">Chinese Simplified (简体中文)</option>
+          <option value="zh-TW">Chinese Traditional (繁體中文)</option>
+          <option value="ja">Japanese (日本語)</option>
+          <option value="ko">Korean (한국어)</option>
+          <option value="vi">Vietnamese (Tiếng Việt)</option>
+          <option value="th">Thai (ไทย)</option>
+          <option value="km">Khmer (ខ្មែរ)</option>
+        </optgroup>
+
+        <!-- Middle Eastern Languages -->
+        <optgroup label="Middle Eastern Languages">
+          <option value="ar">Arabic (العربية)</option>
+          <option value="ur">Urdu (اردو)</option>
+          <option value="fa">Persian (فارسی)</option>
+          <option value="he">Hebrew (עברית)</option>
+          <option value="tr">Turkish (Türkçe)</option>
+        </optgroup>
+
+        <!-- African Languages -->
+        <optgroup label="African Languages">
+          <option value="sw">Swahili (Kiswahili)</option>
+          <option value="am">Amharic (አማርኛ)</option>
+          <option value="ha">Hausa (Hausa)</option>
+          <option value="yo">Yoruba (Yorùbá)</option>
+          <option value="zu">Zulu (isiZulu)</option>
+        </optgroup>
+
+        <!-- Other Languages -->
+        <optgroup label="Other Languages">
+          <option value="tl">Filipino (Tagalog)</option>
+          <option value="ms">Malay (Bahasa Melayu)</option>
+          <option value="id">Indonesian (Bahasa Indonesia)</option>
+        </optgroup>
+      </select>
+      <button id="translate-page" disabled>Translate Page</button>
+      <button id="restore-original">Restore Original</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

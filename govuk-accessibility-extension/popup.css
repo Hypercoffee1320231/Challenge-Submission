@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  width: 250px;
+}
+
+h2, h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0b0c0c;
+}
+
+.option-group {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee0e2;
+  padding-bottom: 15px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: #00703c;
+  color: white;
+  border: 2px solid #00703c;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #005a30;
+  border-color: #005a30;
+}
+
+button:focus {
+  outline: 3px solid #ffdd00;
+  outline-offset: 0;
+}
+
+.language-section {
+  margin-top: 15px;
+}
+
+#language-selector {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 2px solid #0b0c0c;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+#restore-original {
+  background-color: #505a5f;
+  border-color: #505a5f;
+}
+
+#restore-original:hover {
+  background-color: #3b4245;
+  border-color: #3b4245;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  background-color: black !important;
+  color: white !important;
+}
+
+.high-contrast a {
+  color: yellow !important;
+}
+
+.govuk-accessibility {
+  font-size: 1.2em;
+}

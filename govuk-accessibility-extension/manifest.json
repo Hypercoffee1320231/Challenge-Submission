@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "GOV.UK Accessibility Menu",
+  "version": "1.0",
+  "description": "A web extension to improve accessibility for GOV.UK website.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "https://www.gov.uk/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.gov.uk/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "popup.html"
+  ]
+}

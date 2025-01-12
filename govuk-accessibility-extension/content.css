@@ -1,0 +1,86 @@
+/* Accessibility styles */
+@import url('https://fonts.cdnfonts.com/css/opendyslexic');
+
+/* High Contrast Mode - More comprehensive selectors */
+.high-contrast {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* Target all standard elements and common GOV.UK classes */
+.high-contrast *:not(img):not(video) {
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.high-contrast a,
+.high-contrast .govuk-link,
+.high-contrast .govuk-breadcrumbs__link {
+  color: yellow !important;
+  text-decoration: underline !important;
+}
+
+.high-contrast a:hover,
+.high-contrast .govuk-link:hover,
+.high-contrast .govuk-breadcrumbs__link:hover {
+  color: #ffff80 !important;
+}
+
+.high-contrast button,
+.high-contrast .govuk-button {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid white !important;
+}
+
+.high-contrast button:hover,
+.high-contrast .govuk-button:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select,
+.high-contrast .govuk-input,
+.high-contrast .govuk-textarea,
+.high-contrast .govuk-select {
+  background-color: black !important;
+  color: white !important;
+  border: 2px solid white !important;
+}
+
+.high-contrast .govuk-error-message,
+.high-contrast .govuk-error-summary {
+  background-color: black !important;
+  color: #ff6b6b !important;
+  border: 2px solid #ff6b6b !important;
+}
+
+.high-contrast .govuk-warning-text__icon {
+  background-color: white !important;
+  color: black !important;
+}
+
+.high-contrast .govuk-phase-banner__content__tag {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Existing dyslexic font styles */
+.dyslexic-font {
+  font-family: 'OpenDyslexic', Arial, sans-serif !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.1em !important;
+}
+
+.dyslexic-font * {
+  font-family: 'OpenDyslexic', Arial, sans-serif !important;
+}
+
+/* Default accessibility styles */
+.govuk-accessibility {
+  font-size: 1.2em;
+}
